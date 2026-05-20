@@ -121,7 +121,7 @@ function App() {
         }
         const average = values / array.length;
         
-        if (average > 25 && !isBlown) { 
+        if (average > 60 && !isBlown) { 
           handleBlowOut();
           stream.getTracks().forEach(track => track.stop());
         }
